@@ -1,0 +1,103 @@
+.password-box {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.4;
+    z-index: 2;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}
+
+.invalid-feedback {
+    min-height: 18px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.divider::before {
+    margin-right: .75em;
+}
+
+.divider::after {
+    margin-left: .75em;
+}
+
+.google-btn {
+    width: 100%;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.google-btn:hover {
+    background: #f2f2f2;
+}
+
+.google-icon {
+    transform: translateY(-10%);
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.form-control.is-invalid {
+    padding-right: 70px !important;
+}
+
+.forgotpass {
+    text-align: right;
+    justify-content: right;
+    margin: 0;
+    line-height: 1;
+}
+
+.forgotpass a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2A5568;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.forgotpass a:hover {
+    color: #007bff;
+}
+
+.form-check-label {
+    line-height: 1;
+}

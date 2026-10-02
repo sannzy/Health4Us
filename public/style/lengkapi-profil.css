@@ -1,0 +1,87 @@
+.profile-container {
+    padding: 40px 0;
+    min-height: 80vh;
+    position: relative;
+}
+
+.back-btn {
+    position: absolute;
+    left: -150px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: white;
+    color: #295C73;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.back-btn:hover {
+    background: #295C73;
+    border-color: #bbb;
+    transform: translateX(-3px);
+    color: white;
+}
+
+.profile-header h1 {
+    font-weight: 500;
+    color: #2A5568;
+    margin-bottom: 40px;
+    font-family: 'Inter-ExtraBold-28';
+}
+
+.column-title {
+    font-weight: bold;
+    color: #2A5568;
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+}
+
+.mb-4 {
+    margin-bottom: 25px !important;
+    position: relative;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    height: auto;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.invalid-feedback {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.btn-simpan {
+    background-color: #396F89;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.btn-simpan:hover {
+    background-color: #295C73;
+    color: white;
+}

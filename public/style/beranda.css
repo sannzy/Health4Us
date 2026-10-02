@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'Inter-Bold-24';
+    src: url('fonts/Inter/Inter_24pt-Bold.ttf');
+}
+
+body {
+    background: linear-gradient(#f3f3e7, #d6e6c7);
+}
+
+.hero-banner-img {
+    width: 100%; 
+    max-height: 450px;
+    height: auto;
+    object-fit: cover; 
+}
+
+.carousel-caption {
+    padding: 15px;
+    border-radius: 8px;
+    bottom: 10%;
+    max-width: 500px;
+    left: 5%;
+    right: auto;
+}
+
+.carousel-caption h5 {
+    font-family: 'Inter-Bold-24'; 
+    font-weight: 400; 
+    color: white !important; 
+    font-size: 2rem;
+}
+    
+.btn-jelajahi {
+    width: 100%;
+    max-width: 350px;
+    background: #295C73;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(41, 92, 115, 0.2);
+}
+
+.btn-jelajahi:hover {
+    background: #1e4556;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(41, 92, 115, 0.3);
+}
+
+/* BAGIAN AKTIVITAS */
+.header-title {
+    color: #1e3a45;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.header-subtitle {
+    color: #2A5568;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.mascot-img-header {
+    height: 120px;
+    width: auto;
+}
+
+.btn-detail-progress-custom {
+    background-color: #60a599;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.btn-detail-progress-custom:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+/* BAGIAN TIPS SEHAT */
+.tips-section {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.tips-container {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.tips-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1e3a45;
+    margin-bottom: 5px;
+}
+
+.tips-subtitle {
+    font-size: 24px;
+    color: #2A5568;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.tips-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tips-card {
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.tips-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.tips-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0; 
+    transition: 0.4s ease;
+}
+
+.tips-overlay p {
+    color: #1e3a45;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.tips-card:hover .tips-overlay {
+    opacity: 1;
+}
+
+.tips-card:hover img {
+    transform: scale(1.08);
+}
+
+/* BAGIAN TANTANGAN */
+.weekly-challenge {
+    padding: 60px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.header-text-group h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1e3a45;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #2A5568;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.see-all {
+    font-size: 14px;
+    color: #4fa3a5;
+    text-decoration: none;
+}
+
+.challenge-scroll {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.challenge-card {
+    min-width: 300px;
+    max-width: 300px;
+    flex-shrink: 0;
+
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+
+    scroll-snap-align: start;
+}
+
+.challenge-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: #295268;
+    font-weight: 700;
+    margin-bottom: 8px;
+    min-height: 50px;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: #295268;
+    margin-bottom: 12px;
+    min-height: 65px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 10px 0;
+    color: #777;
+}
+
+.btn-detail {
+    margin-top: auto;
+    box-sizing: border-box; 
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 50px;
+    border: none;
+    background: #60a599;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+    text-align: center; 
+    cursor: pointer;
+}
+
+.btn-detail:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.challenge-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.challenge-scroll::-webkit-scrollbar-thumb {
+    background: #4fa3a5;
+    border-radius: 10px;
+}
+
+.challenge-page {
+    padding: 40px 60px;
+    background: #f7f3e8;
+}
+
+.challenge-page h1 {
+    font-size: 26px;
+}
+
+.category-section {
+    margin-top: 40px;
+}
+
+.category-section h2 {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* BAGIAN TOP UMKM */
+.umkm-section {
+    background-color: transparent !important;
+    padding: 60px 0;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+}
+
+.umkm-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.umkm-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+h1.umkm-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1e3a45;
+    margin-bottom: 5px;
+}
+
+h2.umkm-subtitle  {
+    font-size: 24px;
+    color: #2A5568;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.umkm-more-btn {
+    padding: 12px 26px;
+    background: #60a599;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s;
+    text-decoration: none;
+}
+
+.umkm-more-btn:hover {
+    background: var(--primary-green);
+}

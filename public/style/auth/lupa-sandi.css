@@ -1,0 +1,10 @@
+.desc {
+    font-size: 15px;
+    margin-bottom: 24px;
+    color: #1e3a45;
+    white-space: nowrap;
+}
+
+.invalid-feedback {
+    min-height: 18px;
+}

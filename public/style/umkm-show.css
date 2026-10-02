@@ -1,0 +1,190 @@
+.main-wrapper {
+    background-color: #f1f5f2; 
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    
+}
+
+.umkm-show-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.back-btn {
+    position: absolute;
+    left: 60px; 
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: white;
+    color: #295C73;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.back-btn:hover {
+    background: #295C73;
+    border-color: #bbb;
+    transform: translateX(-3px);
+    color: white;
+}
+
+.umkm-card-horizontal {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    max-width: 900px; 
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    padding: 25px; 
+    gap: 30px;
+}
+
+.card-left {
+    flex: 1;
+    position: relative;
+    max-width: 400px;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px; 
+}
+
+.badge-umkm {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #8fb8a1;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.card-right {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.product-desc {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.price-section {
+    background: #f7f3e8;
+    border-radius: 20px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #f0f2f1;
+}
+
+.price-label {
+    display: block;
+    font-size: 11px;
+    color: #2C5565;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price-value {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.coin-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.text-right { text-align: right; }
+
+.btn-tukar-pill {
+    width: 100%;
+    background: #9bc4ad; 
+    color: #1f3d2d;
+    border: none;
+    padding: 18px;
+    border-radius: 50px; 
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-tukar-pill:hover {
+    background: #8aad99;
+    transform: scale(1.01);
+}
+
+.popup-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4); display: flex; justify-content: center; align-items: center; z-index: 100;
+}
+
+.popup-content {
+    background: white; padding: 40px; border-radius: 25px; text-align: center; width: 300px;
+}
+.is-success .popup-icon { 
+    color: #4BB543; 
+    font-size: 40px; 
+}
+
+.is-error .popup-icon { 
+    color: #D8000C; 
+    font-size: 40px; 
+}
+
+.popup-close-btn { 
+    margin-top: 20px; 
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 10px; 
+    border: none; 
+    background: #eee; 
+    cursor: pointer; 
+}
+
+@media (max-width: 768px) {
+    .umkm-card-horizontal {
+        flex-direction: column;
+        max-width: 450px;
+    }
+    .card-left { max-width: 100%; height: 250px; }
+}

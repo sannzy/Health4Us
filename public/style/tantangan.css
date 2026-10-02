@@ -1,0 +1,238 @@
+body { 
+    background:#F5F0E1; 
+    margin:0; 
+    padding:0; 
+}
+
+.tantangan-categories { 
+    display:flex; 
+    gap:12px; 
+    justify-content:center; 
+    margin-bottom:20px; 
+}
+
+.tantangan-cat {
+    display: inline-flex; 
+    align-items: center;  
+    justify-content: center;
+    gap: 8px;            
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1.5px solid #3c6f4a; 
+    background: rgba(232, 240, 228, 0.9);
+    color: #1f3d2d;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tantangan-cat i { 
+    font-size: 20px;
+    color: #295268; 
+}
+
+.tantangan-cat.active, .tantangan-cat:hover{
+    color: #295268;
+}
+
+.tantangan-cat.active, .tantangan-cat:hover {
+    background: #D7EEDD;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tantangan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 80px; 
+    margin-top: 20px;
+}
+
+.tantangan-card { 
+    width: 270px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    transition: 0.25s ease;
+    position: relative;
+}
+
+.tantangan-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+}
+
+.tantangan-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #82BEAA;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.tantangan-img { 
+    width: 100%; 
+    height: 160px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.tantangan-card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tantangan-name {
+    font-size: 20px;
+    color: #295268;
+    font-weight: 700;
+    margin-bottom: 8px;
+    min-height: 50px;
+}
+
+.tantangan-desc {
+    font-size: 15px;
+    color: #295268;
+    margin-bottom: 12px;
+    min-height: 65px;
+}
+
+.lihat-btn {
+    margin-top: auto;
+    box-sizing: border-box; 
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 50px;
+    border: none;
+    background: #60a599;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+    text-align: center; 
+    cursor: pointer;
+}
+
+.lihat-btn:hover {
+    background: var(--primary-green);
+}
+
+.detail-container { 
+    width:90%; 
+    max-width:900px; 
+    margin:30px auto; 
+    padding:20px; 
+    background:transparent; 
+}
+
+.detail-img { 
+    width:100%; 
+    border-radius:10px; 
+}
+
+.daftar-btn { 
+    margin-top:15px; 
+    padding:12px 16px; 
+    background:#203040; 
+    color:white; 
+    border:none; 
+    border-radius:8px; 
+    cursor:pointer; 
+}
+
+.popup {
+    position:fixed;
+    inset:0;
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    background:rgba(0,0,0,0.45);
+}
+
+.popup-box { 
+    background:white; 
+    padding:20px; 
+    border-radius:10px; 
+    text-align:center; 
+}
+
+.popup-box button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-box button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width:800px){
+    .card { width:100%; }
+    .kategori-container { flex-wrap:wrap; }
+}
+
+.banner {
+    width: 100%;
+    max-height: 320px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.banner-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .banner-img {
+        height: 200px;
+    }
+    .banner-text h1 {
+        font-size: 26px;
+    }
+    .banner-text p {
+        font-size: 14px;
+    }
+}

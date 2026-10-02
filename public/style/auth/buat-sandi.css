@@ -1,0 +1,29 @@
+.desc {
+    font-size: 15px;
+    margin-bottom: 24px;
+    color: #1e3a45;
+    white-space: nowrap;
+}
+
+.password-box {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.4;
+    z-index: 2;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}
+
+.invalid-feedback {
+    min-height: 18px;
+}
