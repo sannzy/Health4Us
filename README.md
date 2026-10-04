@@ -1,66 +1,253 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Health4Us
 
-<p align="center"> 
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<p align="center">
+  <strong>Empowering Health, One Step at a Time.</strong>
 </p>
 
-## About Laravel
+<p align="center">
+  A gamified health platform designed to encourage healthier lifestyles through interactive activities, health education, and reward-based experiences.
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <a href="https://health4us-website.vercel.app/">Live Website</a>
+  ·
+  <a href="https://github.com/sannzy/Health4Us">Repository</a>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## About
 
-## Learning Laravel
+**Health4Us** is a web-based health platform that aims to make healthy living more engaging and accessible through a combination of **health education, gamification, and digital rewards**.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Instead of presenting health information in a conventional way, Health4Us encourages users to actively participate in healthy activities and build positive habits through an interactive experience.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+The platform was developed as a web application using **Laravel** and incorporates a reward system called **HealthKoin** to make health-related activities more engaging.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Key Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Health Activities
 
-### Premium Partners
+Users can participate in various health-related activities designed to encourage healthier daily habits.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Gamification
 
-## Contributing
+Health-related activities are supported by gamification elements to create a more interactive and motivating user experience.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### HealthKoin
 
-## Code of Conduct
+Users can earn **HealthKoin** by completing activities and participating in the platform.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Reward System
 
-## Security Vulnerabilities
+HealthKoin can be utilized within the platform's reward ecosystem, providing users with additional motivation to maintain healthy habits.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Health & Educational Content
+
+Provides accessible information and content to increase users' awareness of healthy lifestyles.
+
+### User-Friendly Interface
+
+Designed with an intuitive interface to make health-related information and activities easy to access and navigate.
+
+---
+
+## Tech Stack
+
+| Technology       | Purpose                             |
+| ---------------- | ----------------------------------- |
+| **Laravel**      | Backend & web application framework |
+| **PHP**          | Application logic                   |
+| **MySQL**        | Database management                 |
+| **JavaScript**   | Interactive functionality           |
+| **Tailwind CSS** | User interface styling              |
+| **Vite**         | Frontend asset bundling             |
+| **Vercel**       | Deployment                          |
+
+---
+
+## System Architecture
+
+Health4Us follows a web application architecture where the Laravel application handles the core business logic, database interactions, routing, and user-facing functionality.
+
+```text
+┌─────────────────────┐
+│       User          │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│    Health4Us Web    │
+│     Application     │
+└──────────┬──────────┘
+           │
+     ┌─────┴─────┐
+     ▼           ▼
+┌──────────┐ ┌─────────────┐
+│ Laravel  │ │  Database   │
+│ Backend  │ │   MySQL     │
+└──────────┘ └─────────────┘
+           │
+           ▼
+┌─────────────────────┐
+│    HealthKoin &     │
+│   Reward System     │
+└─────────────────────┘
+```
+
+---
+
+## Project Structure
+
+The project is organized following the Laravel application structure:
+
+```text
+Health4Us/
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+├── tests/
+├── package.json
+├── composer.json
+└── README.md
+```
+
+---
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sannzy/Health4Us.git
+cd Health4Us
+```
+
+### 2. Install PHP dependencies
+
+```bash
+composer install
+```
+
+### 3. Install frontend dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+For Windows:
+
+```bash
+copy .env.example .env
+```
+
+Then configure the database and other environment variables in `.env`.
+
+### 5. Generate application key
+
+```bash
+php artisan key:generate
+```
+
+### 6. Run database migrations
+
+```bash
+php artisan migrate
+```
+
+### 7. Build frontend assets
+
+```bash
+npm run build
+```
+
+For development:
+
+```bash
+npm run dev
+```
+
+### 8. Start the application
+
+```bash
+php artisan serve
+```
+
+The application will be available at:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## Live Demo
+
+Experience the deployed version of Health4Us:
+
+**https://health4us-website.vercel.app/**
+
+---
+
+## Project Goals
+
+Health4Us was developed with several goals in mind:
+
+* Encourage users to adopt healthier habits.
+* Make health education more engaging through gamification.
+* Provide an interactive platform for health-related activities.
+* Introduce a reward mechanism that motivates user participation.
+* Combine technology and health awareness into an accessible digital experience.
+
+---
+
+## Future Improvements
+
+Potential improvements for future development include:
+
+* Personalized health recommendations.
+* More diverse health challenges and activities.
+* Expanded reward and redemption mechanisms.
+* Progress tracking and health activity analytics.
+* Mobile-responsive improvements.
+* Integration with wearable or health-tracking devices.
+* Additional educational health content.
+
+---
+
+## Contributors
+
+Developed collaboratively as part of a web application project.
+
+### Team
+
+* Sanly 
+* Bella Nadya Aurelia
+* Leora Natania Klarise Purba
+* Zahra Annisa Afandi
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is developed for educational and project purposes.
+
+---
+
+<p align="center">
+  <strong>Health4Us — Making Healthy Living More Engaging.</strong>
+</p>
