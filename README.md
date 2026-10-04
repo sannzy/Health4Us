@@ -244,7 +244,7 @@ Developed collaboratively as part of a web application project.
 
 ## License
 
-This project is developed for educational and project purposes.
+This project is developed for educational and project on Web Programming Course purposes.
 
 ---
 
